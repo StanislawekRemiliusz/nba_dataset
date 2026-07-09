@@ -28,7 +28,11 @@ This project includes detailed player-level analytics:
 
 <img width="1280" height="403" alt="image" src="https://github.com/user-attachments/assets/bac221ab-c92b-42cd-8556-d669a5fa4393" />
 
-- Player Efficiency Rating (PER) by points, rebounds, assists, steals, blocks per minute
+- Player Efficiency Rating (PER) by points, rebounds, assists, steals, blocks in playoffs
+
+<img width="1247" height="697" alt="image" src="https://github.com/user-attachments/assets/49865ca2-87a8-47ab-a5f8-174092f62a9c" />
+
+- Player Efficiency Rating (PER) by points, rebounds, assists, steals, blocks  in playoffs per minute
 
 <img width="1529" height="724" alt="image" src="https://github.com/user-attachments/assets/7415c4c0-76ed-4936-aa63-be34c4f1f49b" />
 
