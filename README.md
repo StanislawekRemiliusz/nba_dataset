@@ -1,5 +1,3 @@
-<img width="1280" height="403" alt="image" src="https://github.com/user-attachments/assets/29beff62-ae01-4a39-9d17-9e7d52275213" /># nba_dataset
-nba data to analysis
 
 ## 📊 Player Performance Analysis
 
