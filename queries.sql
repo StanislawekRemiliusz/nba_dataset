@@ -1,4 +1,4 @@
-select * from player_statistics;
+
 
 Select 
 p.firstName, p.lastName, s.points, t.teamScore,t.win
@@ -40,6 +40,9 @@ having avg_win > 0.5 and count(distinct s.gameId) > 20
 order by avg_points desc limit 10
 ;
 
+/*top 10 avg_points per player with avg_win > 0.5 
+and games_played Playoffs */
+
 select p.firstName, p.lastName, round(avg(s.points),1) as avg_points,
 round(avg(t.win),3) as avg_win,t.gameType as game_type, count(distinct s.gameId) as games_played
 from player_statistics s
@@ -53,6 +56,8 @@ group by p.personId,t.gameType
 order by avg_points desc limit 10
 ;
 
+/*tfull list player avg_points per player with avg_win > 0.5 
+and games_played Playoffs */
 Select 
 case 
 when s.numMinutes <20 then '<20 min' 
@@ -96,6 +101,8 @@ select *,avg(numMinutes) as avg_minutes from player_statistics
 group by personId
 having avg(numMinutes) > 10;
 
+/*Player Efficiency Rating (PER) 
+by points, rebounds, assists, steals, blocks by playoff*/
 select 
 firstName, 
 LastName, 
@@ -255,7 +262,7 @@ SELECT
     ROUND(AVG(avg_rebounds),1)
 FROM top_teams;
 
-
+/* row_rank teams by avg of metrics*/
 WITH team_metrics AS (
 
     SELECT
